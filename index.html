@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Xinergiweb Survey Form</h1>
+    <p id ="description">Thank you for taking the time to help us improve the platform</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id ="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="first-name" type="text" placeholder="Muhammad Haekal Sutrisna" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="haekalsutrisna@gmail.com" required /></label>
+        <label for="age">Age: <input id="age" type="number" name="age" min="10" max="120" /></label>
+        <label id="number-label" for="number">Phone: <input id="number" type="number" name="number" min="10" max="120" placeholder="085242343858"/></label>
+        <label for="referrer">Which option best describes your current role??
+            <select id="dropdown" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">freeCodeCamp News</option>
+              <option value="2">freeCodeCamp YouTube Channel</option>
+              <option value="3">freeCodeCamp Forum</option>
+              <option value="4">Other</option>
+            </select>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="recommended"><input id="recommended" type="radio" name="account-type" class="inline" value="3" checked />Definitely</label>
+        <label for="recommended"><input id="recommended" type="radio" name="account-type" class="inline" value="2" />Maybe</label>
+        <label for="recommended"><input id="recommended" type="radio" name="account-type" class="inline" value="1"/>Not Sure</label>
+        <label for="referrer">What is your favorite feature of freeCodeCamp?
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">freeCodeCamp News</option>
+              <option value="2">freeCodeCamp YouTube Channel</option>
+              <option value="3">freeCodeCamp Forum</option>
+              <option value="4">Other</option>
+            </select>
+        <label for="personal-account"><input id="personal-account" type="checkbox" name="account-type" class="inline" value="personal"checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" value="business"/> Business</label>
+        <label for="student-account"><input id="student-account" type="checkbox" name="student-type" class="inline" value="student" checked /> Student</label>
+        <label for="bio">Any comments or suggestions?            :
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter Your Comment Here..."></textarea>
+        </label>  
+        </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
